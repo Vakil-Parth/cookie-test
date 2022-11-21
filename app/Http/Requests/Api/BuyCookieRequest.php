@@ -24,7 +24,7 @@ class BuyCookieRequest extends ApiFormRequest
     public function rules()
     {
         return [
-            'number_of_cookie' => 'required|numeric'
+            'number_of_cookie' => 'required|numeric|min:1'
         ];
     }
 }
